@@ -4,6 +4,8 @@
 	<title>Mateus Ferreira | Web Resume</title>
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -18,29 +20,36 @@
 			</nav>
 		</div>
 	</header>
-	<img src="banner.jpg">
+	<img class="banner" src="banner.jpg">
 	<main>
-		<section>
-			<h2>Sobre este site</h2>
-			<p>Este é meu Web Resume e também meu primeiro portfólio em Desenvolvimento Web. O site foi criado foi todo escrito com HTML, CSS E JavaScript</p>
+		<section class="page">
+			<div>
+				<h2>Sobre este site</h2>
+				<p>Este é meu Web Resume e também meu primeiro portfólio em Desenvolvimento Web. O site foi criado foi todo escrito com HTML, CSS E JavaScript</p>
+			</div>
 		</section>
-		<section>
-			<h2>Sobre Mim</h2>
-			<p>Sou um programador inciante. Atualmente trabalho com comunicação e, desde Setembro de 2020, iniciei uma transição de carreira para me tornar um desenvolvedor</p>
+		<section class="page" id="about-me">
+			<div>
+				<h2>Sobre Mim</h2>
+				<p>Sou um programador inciante. Atualmente trabalho com comunicação e, desde Setembro de 2020, 
+				iniciei uma transição de carreira para me tornar um desenvolvedor</p>
+			</div>
 		</section>
-		<section>
+		<section class="page">
 			<form>
 				<label for="nome-formulario">Seu Nome</label>
-				<input type="text" id="nome-formulario" name="Nome" placeholder="Digite seu nome completo" required>
+				<input type="text" id="nome-formulario" class="input-standard" name="Nome" placeholder="Digite seu nome completo" required>
 				<label for="empresa-formulario">Sua empresa</label>
-				<input type="text" id="empresa-formulario" placeholder="Sua Empresa SA">
+				<input type="text" id="empresa-formulario" class="input-standard" placeholder="Sua Empresa SA">
 				<label for="email-formulario">E-mail</label>
-				<input type="email" id="email-formulario" placeholder="seumail@dominio.com" required>
+				<input type="email" id="email-formulario" class="input-standard" placeholder="seumail@dominio.com" required>
 				<label for="tel-formulario">Telefone</label>
-				<input type="tel" id="tel-formulario" placeholder="(XX) XXXXX-XXXX" required>
+				<input type="tel" id="tel-formulario" class="input-standard" placeholder="(XX) XXXXX-XXXX" required>
 				<label for="mensagem-formulario">Deixe sua mensagem</label>
-				<textarea cols="30" rows="5" id="mensagem-formulario" required></textarea>
+				<textarea cols="30" rows="5" id="mensagem-formulario" class="input-standard" required></textarea>
+				
 			</form>
+
 		</section>
 
 		
