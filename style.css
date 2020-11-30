@@ -1,4 +1,5 @@
 
+
 main {
 	font-family: 'Source Code Pro';
 	font-size: 1.5em;
@@ -8,7 +9,7 @@ main {
 main h2 {
 	font-weight: bold;
 	font-size: 1.5em;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 
 }
 
@@ -16,13 +17,49 @@ main p {
 	margin-bottom: 0.5em;
 }
 
+.banner-text {
+	position: absolute;
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    top: 300px;
+
+   }
+
+.banner-text h1 {
+	font-family: 'Source Code Pro';
+	font-weight: bold;
+	font-size: 3em;
+	color: white;
+	margin-bottom: 0.25em;
+	
+}
+.banner-text h2 {
+font-family:  'Source Sans Pro', sans-serif;
+font-weight: bold;
+font-size: 2em;
+color: white;
+}
+
+.banner-text p { 
+	font-family: 'Source Code Pro';
+	font-weight: normal;
+	font-size: 1.5em;
+	color: white;
+	margin-top: 2em;
+ }
+
 .banner {
 	width: 100%;
+	opacity: 1;
+	
+
 }
 .page {
 	background-color: #D2D1FC;
 	margin: 0 auto;
 	padding: 3em 0;
+	
 }
 
 .page div {
