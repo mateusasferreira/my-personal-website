@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
 	<title>Mateus Ferreira | Web Resume</title>
+	<script src="https://kit.fontawesome.com/f18158c171.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,28 +23,38 @@
 			</nav>
 		</div>
 	</header>
-	<div class="banner-text">
-		<h1>THIS IS MY WEB RESUME</h1>
-		<h2>And my first portfolio in web development</h2>
-		<p>Scroll down and get to know me</p>
+	<div>
+		<img class="profile-picture" src="perfil.jpg">
+		<div class="banner-text">
+			<h1>Mateus Ferreira</h1>
+			<h1>This is my Web Resume</h1>
+			<h2>And my first portfolio in web development</h2>
+			<p>Scroll down and get to know me</p>
+		</div>
+		<img class="banner" src="banner.jpg">
 	</div>
-	<img class="banner" src="banner.jpg">
 	<main>
 		
 		<section class="page">
 			<div>
-				<h2>Sobre este site</h2>
+				<h2>About this page</h2>
 				<p>Este é meu Web Resume e também meu primeiro portfólio em Desenvolvimento Web. O site foi criado foi todo escrito com HTML, CSS E JavaScript</p>
 			</div>
 		</section>
 		<section class="page" id="about-me">
 			<div>
-				<h2>Sobre Mim</h2>
+				
+
+				<h2>About Me</h2>
 				<p>Sou um programador inciante. Atualmente trabalho com comunicação e, desde Setembro de 2020, 
 				iniciei uma transição de carreira para me tornar um desenvolvedor</p>
 			</div>
 		</section>
-		<section class="page">
+		<section class="page" id="contact">
+			<div>
+			<h2>Contact Me</h2>
+			<p>If you wanna work with me or just chat about technology, please get in touch by filling this form</p>
+			</div>
 			<form>
 				<label for="nome-formulario">Seu Nome</label>
 				<input type="text" id="nome-formulario" class="input-standard" name="Nome" placeholder="Digite seu nome completo" required>
@@ -55,15 +66,15 @@
 				<input type="tel" id="tel-formulario" class="input-standard" placeholder="(XX) XXXXX-XXXX" required>
 				<label for="mensagem-formulario">Deixe sua mensagem</label>
 				<textarea cols="30" rows="5" id="mensagem-formulario" class="input-standard" required></textarea>
-				
+				<button>Send your message</button>
 			</form>
-
 		</section>
-
 		
+
 	</main>
 	<footer>
-		
+			
+			<i class="fab fa-linkedin"></i>
 	</footer>
 </body>
 </html>

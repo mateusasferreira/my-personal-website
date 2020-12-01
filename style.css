@@ -6,6 +6,13 @@ main {
 
 }
 
+h1 {
+	font-family: 'Source Code Pro';
+	font-weight: bold;
+	font-size: 3em;
+	color: white;
+}
+
 main h2 {
 	font-weight: bold;
 	font-size: 1.5em;
@@ -17,21 +24,34 @@ main p {
 	margin-bottom: 0.5em;
 }
 
+.profile-picture {
+	position: absolute;
+	-webkit-clip-path: circle(50% at 50% 50%);
+	width: 25%;
+	left: 50%;
+    margin-left: -12.5%;
+    top: 5%;
+    z-index: 2;
+}
+
 .banner-text {
 	position: absolute;
     opacity: 1;
     width: 100%;
     text-align: center;
-    top: 300px;
+    top: 500px;
+    z-index: 2;
 
    }
 
 .banner-text h1 {
-	font-family: 'Source Code Pro';
-	font-weight: bold;
-	font-size: 3em;
-	color: white;
+	
 	margin-bottom: 0.25em;
+	width: 50%;
+	margin: 0 auto;
+	background-color: #3b5944;
+	text-transform: uppercase;
+
 	
 }
 .banner-text h2 {
@@ -51,7 +71,7 @@ color: white;
 
 .banner {
 	width: 100%;
-	opacity: 1;
+	opacity: 0.8;
 	
 
 }
@@ -59,7 +79,7 @@ color: white;
 	background-color: #D2D1FC;
 	margin: 0 auto;
 	padding: 3em 0;
-	
+
 }
 
 .page div {
@@ -87,8 +107,11 @@ color: white;
 	height: 20px;
 	display: block;
 	margin: 5px 0px 10px;
-
+	font-family: 'Source Sans Pro'
+	font-size: 1em;
 }
+
+
 
 form {
 	width: 500px;
@@ -98,4 +121,27 @@ form label {
 	width: 50%;
 	margin: auto;
 	text-align: center;
+}
+
+button {
+	width: 50%;
+    height: 40px;
+    margin: 5px auto;
+    background-color: #6779a1;
+    color: white;
+    font-family: 'Source Code Pro';
+    font-size: 1em;
+    font-weight: bold;
+}
+
+footer {
+	background-color: #212d43;
+	padding: 2em;
+}
+
+.fab {
+	color: lightgrey;
+	text-align: center;
+    width: 100%;
+    font-size: 2em;
 }
