@@ -1,26 +1,26 @@
 
 
-main {
+body {
 	font-family: 'Source Code Pro';
-	font-size: 1.5em;
+	font-size: 1.5rem;
 
 }
 
 h1 {
 	font-family: 'Source Code Pro';
 	font-weight: bold;
-	font-size: 3em;
+	font-size: 3rem;
 	color: white;
 }
 
-main h2 {
+body h2 {
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	margin-bottom: 1em;
 
 }
 
-main p {
+body p {
 	margin-bottom: 0.5em;
 }
 
@@ -64,7 +64,7 @@ color: white;
 .banner-text p { 
 	font-family: 'Source Code Pro';
 	font-weight: normal;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	color: white;
 	margin-top: 2em;
  }
@@ -83,7 +83,7 @@ color: white;
 }
 
 .page div {
-	width: 940px;
+	width: 70%;
 	display: block;
 	text-align: center;
 	margin: 0 auto;
@@ -94,8 +94,38 @@ color: white;
 	color: white;
 }
 
+#skills {
+	display: flex;
+
+}
+
+#skills ul {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+    padding: 20px;
+}
+
+
+
+#skills li {
+	background-color: white;
+    padding: 10px;
+    margin: 2% 3%;
+    box-shadow: 2px 3px 5px black;
+    transition: 0.5s;
+    
+}
+
+
+
+#skills li:hover {
+	box-shadow: 5px 5px black;
+	transform: scale(1.05);
+
+}
+
 .page form {
-	
 	padding: 30px 0;
 	display: block;
 	width: 40%;
@@ -108,7 +138,7 @@ color: white;
 	display: block;
 	margin: 5px 0px 10px;
 	font-family: 'Source Sans Pro'
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 
@@ -130,8 +160,17 @@ button {
     background-color: #6779a1;
     color: white;
     font-family: 'Source Code Pro';
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
+    transition: 0.3s;
+
+}
+
+button:hover {
+	transform: scale(1.03);
+	background-color: #212d43;
+	cursor: pointer;
+	border: none;
 }
 
 footer {
@@ -143,5 +182,10 @@ footer {
 	color: lightgrey;
 	text-align: center;
     width: 100%;
-    font-size: 2em;
+    font-size: 2rem;
+}
+
+.fab:hover {
+	transform: scale(1.1);
+	cursor: pointer;
 }
