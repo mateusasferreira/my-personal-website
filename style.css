@@ -71,16 +71,52 @@ color: white;
 
 .banner {
 	width: 100%;
-	opacity: 0.8;
-	
-
+	opacity: 0.7;
 }
+
+.navbar {
+	background-color: #6779a1;
+	position:sticky;
+	top: 0px;
+}
+
+.navbar-links {
+	display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    margin: 0 auto
+}
+
+.navbar-links li {
+	    padding: 1%;
+    font-size: 1.2rem;
+    /* color: white; */
+    font-weight: bold;
+    width: 50%;
+    text-align: center
+}
+
+.navbar-links a {
+	color: white;
+	text-decoration: none;
+	transition: 0.8s;
+}
+
+.navbar-links a:hover {
+	color: black;
+	background-color: white;
+	
+}
+
+
 .page {
 	background-color: #D2D1FC;
 	margin: 0 auto;
 	padding: 3em 0;
 
 }
+
+/*repensar a escolha de classes e ids aqui, junto com a estrutura do HTML*/
 
 .page div {
 	width: 70%;
@@ -98,6 +134,8 @@ color: white;
 	display: flex;
 
 }
+
+/*resolver marcação de classes aqui // destacar título*/
 
 #skills ul {
 	display: flex;
@@ -122,8 +160,11 @@ color: white;
 #skills li:hover {
 	box-shadow: 5px 5px black;
 	transform: scale(1.05);
+	background-color: #6779a1;
+	color: white;
 
 }
+
 
 .page form {
 	padding: 30px 0;
@@ -131,6 +172,8 @@ color: white;
 	width: 40%;
 	margin: 0 auto;
 }
+
+/* ajustar width */
 
 .input-standard {
 	width: 100%;
@@ -152,6 +195,8 @@ form label {
 	margin: auto;
 	text-align: center;
 }
+
+/*button não-responsivo, o height precisa ser ajustável*/
 
 button {
 	width: 50%;
