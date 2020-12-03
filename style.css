@@ -16,12 +16,12 @@ h1 {
 body h2 {
 	font-weight: bold;
 	font-size: 1.5rem;
-	margin-bottom: 1em;
+	margin: 0.5em auto;
 
 }
 
 body p {
-	margin-bottom: 0.5em;
+	margin: 1em auto;
 }
 
 .profile-picture {
@@ -86,15 +86,16 @@ color: white;
     align-items: center;
     width: fit-content;
     margin: 0 auto;
-    text-align: center
+    text-align: center;
 }
 
 .navbar-links li {
 	padding: 1%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     /* color: white; */
     font-weight: bold;
     width: 50%;
+    height: 3em;
     text-align: center;
     text-shadow: 0.1rem 0.1rem 0.1rem black;
     
@@ -105,12 +106,13 @@ color: white;
 	color: white;
 	text-decoration: none;
 	transition: 0.8s;
+
 }
 
 .navbar-links a:hover {
-	color: black;
+	color: blue;
 	background-color: white;
-	text-shadow: 0.1rem 0.1rem 0.1rem grey;
+	text-shadow: 0.1rem 0.1rem 0.1rem black;
 	
 }
 
@@ -122,7 +124,6 @@ color: white;
 
 }
 
-/*repensar a escolha de classes e ids aqui, junto com a estrutura do HTML*/
 
 .page div {
 	width: 70%;
@@ -135,6 +136,7 @@ color: white;
 	color: white;
 }
 
+/*repensar width*/
 .skills-list {
 	display: flex;
 	justify-content: space-around;
@@ -142,7 +144,6 @@ color: white;
 
 }
 
-/*resolver marcação de classes aqui // destacar título*/
 
 .skills-list ul {
 	display: flex;
@@ -164,6 +165,10 @@ color: white;
     
 }
 
+.skills-list li:nth-child(1){
+	background-color: #a0c1d1;
+	text-transform: uppercase;
+}
 
 
 .skills-list li:hover {
@@ -242,4 +247,33 @@ footer {
 .fab:hover {
 	transform: scale(1.1);
 	cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+	.page div {
+		width: auto;
+		margin: 0 5%;
+	}
+
+	/*.navbar {
+		width: auto;
+	} */
+
+	.navbar {
+		display:none;
+	}
+
+	.page form {
+
+		width: 80%;
+
+	}
+
+	.page {
+		padding: 1em;
+	}
+
+	.skills-list ul {
+		width:100%;
+	}
 }
