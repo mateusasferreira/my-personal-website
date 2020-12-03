@@ -24,8 +24,22 @@ body p {
 	margin: 1em auto;
 }
 
+/*resolver porblema da opacidade do bg*/
+
+.banner-image {
+	position: relative;
+	height:500px;
+	overflow: hidden;
+	background: url(banner.jpg) no-repeat center;
+	background-size: cover;
+	
+
+}
+
+/*
 .profile-picture {
 	position: absolute;
+	display: none;
 	-webkit-clip-path: circle(50% at 50% 50%);
 	width: 25%;
 	left: 50%;
@@ -34,16 +48,40 @@ body p {
     z-index: 2;
 }
 
+*/
+
+/*Criar algum botão*/
+
 .banner-text {
 	position: absolute;
-    opacity: 1;
-    width: 100%;
-    text-align: center;
-    top: 500px;
-    z-index: 2;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  	overflow: hidden;
+  	text-align: center;
+  	color: white;
+  	text-transform: uppercase;
+  	
 
-   }
+}
 
+.banner-text h1 {
+	letter-spacing: 0.1em;
+	border: 5px solid white;
+    padding: 10px 15px;
+
+ }
+
+.banner-text span {
+	display: block;
+    margin: 20px;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-shadow: 0 0 5px black;
+
+	
+}
+/*
 .banner-text h1 {
 	
 	margin-bottom: 0.25em;
@@ -72,7 +110,7 @@ color: white;
 .banner {
 	width: 100%;
 	opacity: 0.7;
-}
+} */
 
 .navbar {
 	background-color: #6779a1;
@@ -90,6 +128,9 @@ color: white;
 }
 
 .navbar-links li {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 	padding: 1%;
     font-size: 1.5rem;
     /* color: white; */
