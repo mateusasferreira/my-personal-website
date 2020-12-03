@@ -83,18 +83,23 @@ color: white;
 .navbar-links {
 	display: flex;
     justify-content: space-around;
+    align-items: center;
     width: fit-content;
-    margin: 0 auto
+    margin: 0 auto;
+    text-align: center
 }
 
 .navbar-links li {
-	    padding: 1%;
+	padding: 1%;
     font-size: 1.2rem;
     /* color: white; */
     font-weight: bold;
     width: 50%;
-    text-align: center
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    
 }
+
 
 .navbar-links a {
 	color: white;
@@ -104,7 +109,7 @@ color: white;
 
 .navbar-links a:hover {
 	color: black;
-	background-color: white;
+	background-color: white
 	
 }
 
@@ -132,6 +137,8 @@ color: white;
 
 #skills {
 	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 
 }
 
@@ -139,9 +146,11 @@ color: white;
 
 #skills ul {
 	display: flex;
-	flex-direction: column;
-	width: 50%;
+    flex-direction: column;
+   	width: 45%;
+    min-width: fit-content;
     padding: 20px;
+    justify-content: space-between;
 }
 
 
