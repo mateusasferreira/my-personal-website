@@ -177,6 +177,43 @@ color: white;
 	color: white;
 }
 
+
+.timeline-topics {
+	position: relative;
+	width: 100%;
+	margin: auto;
+}
+
+.timeline-steps {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	z-index: 2;
+}
+
+.timeline-steps li:before {
+	content: "";
+	display:block;
+	margin: auto;
+	width: 20px;
+	height:20px;
+	border-radius: 50%;
+	border: solid 2px black;
+
+}
+
+.timeline-steps li:hover:before, .timeline-steps li.active:before {
+	background-color: blue;
+}
+
+.timeline-bar {
+	position: absolute;
+	width:100%;
+	height:5px;
+	border: solid 2px black;
+	z-index: 1;
+}
+
 /*repensar width*/
 .skills-list {
 	display: flex;
