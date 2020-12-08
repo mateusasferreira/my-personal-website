@@ -117,6 +117,8 @@ color: white;
 	opacity: 0.7;
 } */
 
+/*espaçar lis*/
+
 .navbar {
 	background-color: #231F20;
 	position:sticky;
@@ -128,7 +130,7 @@ color: white;
 	display: flex;
     justify-content: space-around;
     align-items: center;
-    width: fit-content;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
 }
@@ -138,9 +140,9 @@ color: white;
 	align-items: center;
 	justify-content: space-around;
 	padding: 1%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     /* color: white; */
-    font-weight: bold;
+    font-weight: 500;
     width: 50%;
     height: 3em;
     text-align: center;
@@ -152,13 +154,12 @@ color: white;
 .navbar-links a {
 	color: white;
 	text-decoration: none;
-	transition: 0.8s;
+	transition: 0.3s;
 
 }
 
 .navbar-links a:hover {
-	background-color: white;
-	color: black;
+	color: lightskyblue;
 	text-shadow: none;
 }
 
@@ -199,6 +200,7 @@ color: white;
 .timeline-steps li:before {
 	content: "";
 	display:block;
+	background-color: #EDF6F9;
 	margin: auto;
 	width: 20px;
 	height:20px;
@@ -207,18 +209,26 @@ color: white;
 }
 
 .timeline-steps li:hover:before, .timeline-steps li.active:before {
-	background-color: #006D77;
+	background-color: lightskyblue;
 }
 
 .timeline-steps li:after {
-	position: absolute;
-	display: block;
-	width:100%;
-	height:5px;
-	border: solid 2px black;
-	z-index: 1;
+	content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    top: 10px;
+    z-index: -1;
+    background-color: black;
 }
 
+.timeline-steps li:last-child:after {
+	content: none;
+}
+
+.steps-list li {
+	display: none;
+}
 
 
 /*repensar width*/
@@ -283,6 +293,8 @@ color: white;
 	margin: 5px 0px 10px;
 	font-family: 'Source Sans Pro'
 	font-size: 1rem;
+	color: grey;
+	border: none;
 }
 
 
@@ -294,6 +306,7 @@ form {
 form label {
 	width: 50%;
 	margin: auto;
+	font-size: 1.2rem;
 	text-align: center;
 }
 
