@@ -197,6 +197,10 @@ color: white;
 	z-index: 2;
 }
 
+.progress-bar-step.fulfill:before {
+	background-color: lightskyblue;
+}
+
 .progress-bar-step:before {
 	content: "";
 	display:block;
@@ -208,7 +212,11 @@ color: white;
 	border: solid 2px black;
 }
 
-.progress-bar-step:hover:before, .timeline-steps li.active:before {
+.progress-bar-step:first-child:before {
+	background-color: lightskyblue;
+}
+
+.progress-bar-step:hover:before, .progress-bar-step.active:before {
 	background-color: lightskyblue;
 }
 
