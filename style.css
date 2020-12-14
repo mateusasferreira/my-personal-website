@@ -190,14 +190,14 @@ color: white;
 	margin: auto;
 }
 
-.timeline-steps {
+.progress-bar {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 	z-index: 2;
 }
 
-.timeline-steps li:before {
+.progress-bar-step:before {
 	content: "";
 	display:block;
 	background-color: #EDF6F9;
@@ -208,11 +208,11 @@ color: white;
 	border: solid 2px black;
 }
 
-.timeline-steps li:hover:before, .timeline-steps li.active:before {
+.progress-bar-step:hover:before, .timeline-steps li.active:before {
 	background-color: lightskyblue;
 }
 
-.timeline-steps li:after {
+.progress-bar-step:after {
 	content: "";
     position: absolute;
     width: 30%;
@@ -222,12 +222,26 @@ color: white;
     background-color: black;
 }
 
-.timeline-steps li:last-child:after {
+.progress-bar-step:last-child:after {
 	content: none;
 }
 
+.steps {
+	overflow: hidden;
+	margin-top: 20px;
+	
+
+}
+
+.steps-list {
+	display: flex;
+	width: 400%;
+	margin-top: 30px;
+	transition: margin-left 0.3s ease-in-out;
+}
+
 .steps-list li {
-	display: none;
+	
 }
 
 
