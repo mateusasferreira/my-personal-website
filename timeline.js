@@ -1,13 +1,23 @@
-var stepsList = document.querySelector(".steps-list");
+const stepsList = document.querySelector(".steps-list");
 
-var progressBarSteps = document.querySelectorAll (".progress-bar-step");
+const progressBarSteps = document.querySelectorAll (".progress-bar-step");
 
-var progressBarStepsArr = Array.from(progressBarSteps);
+const progressBarStepsArr = Array.from(progressBarSteps);
 
 progressBarStepsArr.forEach(function(step){
 	step.addEventListener("click", function(){
 		let index = progressBarStepsArr.indexOf(step);
-		changeStep(index);})
+		changeStep(index);
+		let fulfilledSteps = progressBarStepsArr.slice(0, index + 1);
+		fulfilledSteps.forEach(function(fulfilledStep){
+			fulfilledStep.classList.add("fulfill");	
+		})
+		let unfulfilledSteps = progressBarStepsArr.slice(index + 1, progressBarStepsArr.length + 1);
+		unfulfilledSteps.forEach(function(unfulfilledStep){
+			unfulfilledStep.classList.remove("fulfill")
+		})
+		
+	})
 
 })
 
@@ -16,7 +26,11 @@ function changeStep (i) {
 	stepsList.style.marginLeft = operator + "%";
 }
 
+/*function changeProgressBar (i, e){
+	if (progressBarStepsArr.indexOf(e) < i)
 
+		.classList.add("fulfill");
+	}*/
 
 
 

@@ -218,6 +218,7 @@ color: white;
 
 .progress-bar-step:hover:before, .progress-bar-step.active:before {
 	background-color: lightskyblue;
+	cursor: pointer;
 }
 
 .progress-bar-step:after {
