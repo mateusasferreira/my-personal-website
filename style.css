@@ -9,12 +9,11 @@ body a {
 	text-decoration: none;
 }
 
-h1 {
+body h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	font-size: 3rem;
 	color: white;
-	
 }
 
 body h2 {
@@ -31,14 +30,9 @@ body h3 {
 
 body p {
 	margin: 1em auto;
-	line-height: 1.5rem;
-	
+	line-height: 1.5rem;	
 }
 
-
-
-
-/*resolver porblema da opacidade do bg*/
 
 .hero {
 	position: relative;
@@ -60,23 +54,6 @@ body p {
 }
 
 
-
-/*
-.profile-picture {
-	position: absolute;
-	display: none;
-	-webkit-clip-path: circle(50% at 50% 50%);
-	width: 25%;
-	left: 50%;
-    margin-left: -12.5%;
-    top: 5%;
-    z-index: 2;
-}
-
-*/
-
-/*Criar algum botão*/
-
 .banner-text {
 	position: absolute;
     top: 50%;
@@ -93,9 +70,6 @@ body p {
 	justify-content: center;
 }
 
-
-
-
 .banner-text h1 {
 	display: block;
 	letter-spacing: 0.1em;
@@ -103,7 +77,6 @@ body p {
     padding: 10px 15px;
     text-shadow: 0 0 5px black;
     box-shadow: 0 0 5px black;
-
  }
 
 .banner-text span {
@@ -112,41 +85,8 @@ body p {
     margin: 20px;
     font-weight: 600;
     font-size: 1.2em;
-    text-shadow: 0 0 5px black;
-	
+    text-shadow: 0 0 5px black;	
 }
-/*
-.banner-text h1 {
-	
-	margin-bottom: 0.25em;
-	width: 50%;
-	margin: 0 auto;
-	background-color: #3b5944;
-	text-transform: uppercase;
-
-	
-}
-.banner-text h2 {
-font-family:  'Source Sans Pro', sans-serif;
-font-weight: bold;
-font-size: 2em;
-color: white;
-}
-
-.banner-text p { 
-	font-family: 'Source Code Pro';
-	font-weight: normal;
-	font-size: 1.5rem;
-	color: white;
-	margin-top: 2em;
- }
-
-.banner {
-	width: 100%;
-	opacity: 0.7;
-} */
-
-/*espaçar lis*/
 
 .navbar {
 	background-color: #36454F;
@@ -192,16 +132,13 @@ color: white;
 	text-shadow: none;
 }
 
-
-.page {
+.container {
 	background-color: #EDEDED;
 	margin: 0 auto;
 	padding: 3em 0;
-
 }
 
-
-.page div {
+.container div {
 	width: 70%;
 	text-align: center;
 	margin: 0 auto;
@@ -230,12 +167,9 @@ color: white;
 	margin: 3em 0 1em;
 }
 
-.progress-bar-step.fulfill:before {
+.progress-bar-step.active:before {
 	background-image: linear-gradient(to top right, #FF6112 , #FFAC00);
-
 }
-
-
 
 .progress-bar-step:before {
 	content: "";
@@ -274,21 +208,17 @@ color: white;
 .steps {
 	overflow: hidden;
 	margin-top: 20px;
-	
-
 }
 
 .fas {
 	color: black;
 	font-size: 2.5rem;
-
 }
 
 .steps-list {
 	display: flex;
 	width: 400%;
 	transition: margin-left 0.3s ease-in-out;
-
 }
 
 .steps-list li {
@@ -299,16 +229,11 @@ color: white;
 	margin: 0.5em auto 1.5em;
 }
 
-
-
-/*repensar width*/
 .skills-list {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-
 }
-
 
 .skills-list ul {
 	display: flex;
@@ -343,18 +268,15 @@ color: white;
 	transform: scale(1.02);
 	background-image: linear-gradient(to top right, #36454F , #86B7C4);
 	color: white;
-
 }
 
 
-.page form {
+.container form {
 	padding: 30px;
 	display: block;
 	width: 40%;
 	margin: 0 auto;
 }
-
-/* ajustar width */
 
 .input-standard {
 	width: 100%;
@@ -382,7 +304,6 @@ form label {
 	text-align: center;
 }
 
-/*button não-responsivo, o height precisa ser ajustável*/
 
 button {
 	width: 50%;
@@ -396,8 +317,6 @@ button {
     transition: 0.3s;
     border: none;
     border-radius: 20px;
-
-
 }
 
 button:hover {
@@ -406,8 +325,7 @@ button:hover {
 }
 
 button:active {
-	transform: scale(0.97);
-	
+	transform: scale(0.97);	
 }
 
 footer {
@@ -435,26 +353,20 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-	.page div {
+	.container div {
 		width: auto;
 		margin: 0 5%;
 	}
-
-	/*.navbar {
-		width: auto;
-	} */
 
 	.navbar {
 		display:none;
 	}
 
-	.page form {
-
+	.container form {
 		width: 80%;
-
 	}
 
-	.page {
+	.container {
 		padding: 1em;
 	}
 

@@ -8,13 +8,13 @@ progressBarStepsArr.forEach(function(step){
 	step.addEventListener("click", function(){
 		let index = progressBarStepsArr.indexOf(step);
 		changeStep(index);
-		let fulfilledSteps = progressBarStepsArr.slice(0, index + 1);
-		fulfilledSteps.forEach(function(fulfilledStep){
-			fulfilledStep.classList.add("fulfill");	
+		let checkedSteps = progressBarStepsArr.slice(0, index + 1);
+		checkedSteps.forEach(function(checkedStep){
+			checkedStep.classList.add("active");	
 		})
-		let unfulfilledSteps = progressBarStepsArr.slice(index + 1, progressBarStepsArr.length + 1);
-		unfulfilledSteps.forEach(function(unfulfilledStep){
-			unfulfilledStep.classList.remove("fulfill")
+		let uncheckedSteps = progressBarStepsArr.slice(index + 1, progressBarStepsArr.length + 1);
+		uncheckedSteps.forEach(function(uncheckedStep){
+			uncheckedStep.classList.remove("active")
 		})
 		
 	})
@@ -27,7 +27,8 @@ function changeStep (i) {
 }
 
 
-//This below is how I originally wrote the code above / Abaixo é como eu escrevi o código acima originalmente
+//This below is how I originally wrote the code above, just before I managed to implement a looping;
+// Abaixo é como eu escrevi o código acima originalmente, antes de implementar o looping;
 
 
 /*
