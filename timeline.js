@@ -29,13 +29,6 @@ function changeStep (i) {
 
 //This below is how I originally wrote the code above / Abaixo é como eu escrevi o código acima originalmente
 
-/*function changeProgressBar (i, e){
-	if (progressBarStepsArr.indexOf(e) < i)
-
-		.classList.add("fulfill");
-	}*/
-
-
 
 /*
 progressBarStepsArr[0].addEventListener("click", function(){

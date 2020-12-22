@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 }
 
 body a {
@@ -31,7 +31,12 @@ body h3 {
 
 body p {
 	margin: 1em auto;
+	line-height: 1.5rem;
+	
 }
+
+
+
 
 /*resolver porblema da opacidade do bg*/
 
@@ -284,6 +289,10 @@ color: white;
 	width: 400%;
 	transition: margin-left 0.3s ease-in-out;
 
+}
+
+.steps-list li {
+	width: 100%;
 }
 
 .steps-list h3 {
