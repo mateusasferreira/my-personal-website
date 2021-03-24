@@ -1,7 +1,5 @@
 # Interative Personal Website
 
-![page screenshot](screenshot1.png)
-
 # About this project 
 
 This is a front-end template for a personal website entirely developed with pure HTML, CSS and JavaScript. It also can be used as a web resume.
