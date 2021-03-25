@@ -1,0 +1,75 @@
+.timeline-wrapper{
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.timeline-topics {
+	position: relative;
+	width: 100%;
+	margin: auto;
+}
+
+.progress-bar {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	z-index: 2;
+	margin: 3em 0 1em;
+}
+
+.progress-bar-step.active:before {
+	background-image: linear-gradient(to top right, #FF6112 , #FFAC00);
+}
+
+.progress-bar-step:before {
+	content: "";
+	display:block;
+	background-color: #EDF6F9;
+	margin: auto;
+	width: 20px;
+	height:20px;
+	border-radius: 50%;
+	border: solid 2px black;
+}
+
+.progress-bar-step:first-child:before {
+	background-image: linear-gradient(to top right, #FF6112 , #FFAC00);
+}
+
+.progress-bar-step:hover:before, .progress-bar-step.active:before {
+	background-image: linear-gradient(to top right, #FF6112 , #FFAC00);
+	cursor: pointer;
+}
+
+.progress-bar-step:after {
+	content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    top: 10px;
+    z-index: -1;
+    background-color: black;
+}
+
+.progress-bar-step:last-child:after {
+	content: none;
+}
+
+.steps {
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+.steps-list {
+	display: flex;
+	width: 400%;
+	transition: margin-left 0.3s ease-in-out;
+}
+
+.steps-list li {
+	width: 100%;
+}
+
+.steps-list h3 {
+	margin: 0.5em auto 1.5em;
+}

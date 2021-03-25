@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width" initial-scale="1.0">
 	<title>Mateus Ferreira | Web Resume</title>
 	<script src="https://kit.fontawesome.com/f18158c171.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/hero.css">
+	<link rel="stylesheet" href="assets/css/navbar.css">
+	<link rel="stylesheet" href="assets/css/timeline.css">
+	<link rel="stylesheet" href="assets/css/skills.css">
+	<link rel="stylesheet" href="assets/css/form.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,14 +26,13 @@
 				<h1>Mateus Ferreira</h1>
 				<span>Web Developer</span>
 				<div class="banner-text-icons">
-					<a href="https://www.linkedin.com/in/mateus-ferreira-3315a1109/" target="_blank" rel="noopener noreferrer" class="fab fa-linkedin"></a>
-					<a href="https://github.com/mateusasferreira" target="_blank" rel="noopener noreferrer" class="fab fa-github"></a>
+					<a href="https://www.linkedin.com/in/mateus-ferreira-3315a1109/" title="link for LinkedIn profile" target="_blank" rel="noopener noreferrer" class="fab fa-linkedin"></a>
+					<a href="https://github.com/mateusasferreira" target="_blank" title="link for Github profile" rel="noopener noreferrer" class="fab fa-github"></a>
 				</div>
 			</div>
 		</div>
-		</header>
-		
-	<main>
+		</header>		
+	<main role="main">
 			<nav class="navbar">
 				<ul class="navbar-links">
 					<li>
@@ -47,11 +51,10 @@
 						<a href="#contact">Contact</a>
 					</li>
 				</ul>
-			</nav>
-		
+			</nav>		
 		<section class="container" id="about-page">
 			<h2>About this page</h2>
-			<p>This is my my web resume and also my first portfolio in web development. I've programmed it all using pure HTML, CSS and Javascript in order to practice my skills and show a little bit of what I can develop using this languages. I hope you enjoy it!</p>
+			<p>This is my my web resume and also my first portfolio in web development. I've developed it using HTML, CSS and Vanilla Javascript in order to practice my skills and show a little bit of what I can develop using this languages. I hope you enjoy it!</p>
 		</section>
 		<section class="container" id="about-me">
 			<h2>About Me</h2>
@@ -98,11 +101,9 @@
 						<i class="fas fa-university"></i>
 						<h3>Second college education</h3>
 						<p>In 2020, I was also admitted to my second university course: a 2-year online technologist program in Systems Analysis and Development at FIAP. I'll start attending classes in February 2021 and I hope that will be the begging of a new journey in my life.</p>
-					</li>
-					
+					</li>					
 				</ul>
-			</div>
-			
+			</div>			
 		</section>
 		<section class="container" id="skills">
 			<div class="skills-list">
@@ -123,7 +124,6 @@
 						<h3>Fast Learner</h3>
 					</li>
 				</ul>
-
 				<ul>
 					<li>
 						<h3>Hard Skills</h3>
@@ -145,34 +145,28 @@
 			</div>
 		</section>
 		<section class="container" id="contact">
-			<div class="contact-text">
+			<div class="contact-section">
 			<h2>Contact Me</h2>
 			<p>If you wanna work with me or just chat about technology, please get in touch by filling this form:</p>
-			</div>
-			<form>
-				<label for="nome-formulario">Name</label>
-				<input type="text" id="nome-formulario" class="input-standard" name="Nome" placeholder="Your Name" required>
-				<label for="email-formulario">Email</label>
-				<input type="email" id="email-formulario" class="input-standard" placeholder="youremail@domain.com" required>
-				<label for="tel-formulario">Phone</label>
-				<input type="tel" id="tel-formulario" class="input-standard" placeholder="+XX (XX) XXXXXXXXX">
-				<label for="mensagem-formulario">Message</label>
-				<textarea cols="30" rows="5" id="mensagem-formulario" class="input-standard" placeholder="Write your message" required></textarea>
-				<button>Send your message</button>
-			</form>
+				<form>
+					<label for="nome-formulario">Name</label>
+					<input type="text" id="nome-formulario" class="input-standard" name="Nome" placeholder="Enter your name" required>
+					<label for="email-formulario">Email</label>
+					<input type="email" id="email-formulario" class="input-standard" placeholder="Enter your email address" required>
+					<label for="tel-formulario">Phone</label>
+					<input type="tel" id="tel-formulario" class="input-standard" placeholder="Enter your phone number">
+					<label for="mensagem-formulario">Message</label>
+					<textarea cols="30" rows="5" id="mensagem-formulario" class="input-standard" placeholder="Write your message here" required></textarea>
+					<button>Send your message</button>
+				</form>
+			</div>			
 		</section>
-		
-
 	</main>
 	<footer>
 			<a href="https://www.linkedin.com/in/mateus-ferreira-3315a1109/" target="_blank" rel="noopener noreferrer" class="fab fa-linkedin"></a>
-			<a href="https://github.com/mateusasferreira" target="_blank" rel="noopener noreferrer" class="fab fa-github">
-				
-			</a>
-				
+			<a href="https://github.com/mateusasferreira" target="_blank" rel="noopener noreferrer" class="fab fa-github"></a>				
 	</footer>
-
-	<script src="js/timeline.js"></script>
 </body>
+<script src="assets/js/timeline.js"></script>
 
 </html>
