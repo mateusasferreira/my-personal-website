@@ -1,5 +1,7 @@
 <h1 align="center"> Interative Personal Website </h1>
 
+[![Generic badge](https://img.shields.io/badge/Status:-Concluded-green.svg)](https://shields.io/)
+
 ## ❓ About this project 
 
 This is a front-end template for a personal website entirely developed with pure HTML, CSS and JavaScript. It also can be used as a web resume.
